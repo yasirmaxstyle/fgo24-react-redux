@@ -1,33 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import FormSurvey from "./pages/FormSurvey"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="max-w-[640px] mx-auto flex flex-col gap-4 py-5">
+        <div className="flex justify-center bg-white p-3 rounded-lg shadow-md h-50">
+          <img src="/public/20-10-2016-ilustrasi-rokok-membunuhmu.jpg" alt="ilustrasi-rokok" />
+        </div>
+        <div className="bg-white h-40 rounded-lg shadow-md flex flex-col gap-4 items-center justify-center border-t-10 border-orange-line">
+          <h1 className='text-4xl font-bold text-center'>Form Survey Perokok</h1>
+          <p>Isilah survey ini untuk mendapatkan Giveaway menarik</p>
+        </div>
+        <FormSurvey />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }

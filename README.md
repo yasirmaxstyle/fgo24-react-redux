@@ -1,12 +1,12 @@
 # FORM HANDLING IN REACT
 This program utilize `react-hook-form` to handle form in React and `yup` for validation and sanitation. The program will show error messages when input is not valid. As well as input that need other follow-up input, the follow-up input will be disabled when in initial choice is 'no'.
 ### Preview demo of dependent follow-up input
-[demo](./public/demo-input-followup.webm)
+[demo-input-followup.webm](https://github.com/user-attachments/assets/783b7ec4-b3e0-46ca-925a-b8e3b21d1e69)
 
 ## HOW TO TRY THIS PROGRAM
 1. Clone this project
 ```sh
-git clone https://github.com/yasirmaxstyle/fgo24-react-table
+git clone https://github.com/yasirmaxstyle/fgo24-react-form
 ```
 2. Install NPM
 ```sh

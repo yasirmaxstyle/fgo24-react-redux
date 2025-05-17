@@ -1,12 +1,37 @@
-# React + Vite
+# FORM HANDLING IN REACT
+This program utilize `react-hook-form` to handle form in React and `yup` for validation and sanitation. The program will show error messages when input is not valid. As well as input that need other follow-up input, the follow-up input will be disabled when in initial choice is 'no'.
+### Preview demo of dependent follow-up input
+[demo](./public/demo-input-followup.webm)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## HOW TO TRY THIS PROGRAM
+1. Clone this project
+```sh
+git clone https://github.com/yasirmaxstyle/fgo24-react-table
+```
+2. Install NPM
+```sh
+npm install
+```
+3. Run in dev mode
+```sh
+npm run dev
+```
+## TECHNOLOGIES
+- [React JS](https://react.dev/)
+- [Vite](https://vite.dev/)
+- [NPM](https://www.npmjs.com/)
+- [TailwindCSS](https://tailwindcss.com/)
 
-Currently, two official plugins are available:
+## DEPENDENCIES
+- [React-Router](https://www.npmjs.com/package/react-router)
+- [React-Hook-Form](https://www.npmjs.com/package/react-hook-form)
+- [Yup](https://www.npmjs.com/package/yup)
+- [React-Toastify](https://www.npmjs.com/package/react-toastify)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How to take part in this project
+You are free to fork this project, make improvement and submit a pull request to improve this project. If you find this useful or if you have suggestion, you can start discussing through my social media below.
+- [Instagram](https://www.instagram.com/yasirmaxstyle/)
+- [LinkedIn](https://www.linkedin.com/in/muhamad-yasir-806230117/)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## License
+This project is under MIT License

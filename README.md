@@ -6,25 +6,30 @@ This program utilize `react-hook-form` to handle form in React and `yup` for val
 ## HOW TO TRY THIS PROGRAM
 1. Clone this project
 ```sh
-git clone https://github.com/yasirmaxstyle/fgo24-react-form
+git clone https://github.com/yasirmaxstyle/fgo24-react-redux
 ```
-2. Install NPM
+2. Get into the path
+```sh
+cd fgo24-react-redux
+```
+3. Install NPM
 ```sh
 npm install
 ```
-3. Run in dev mode
+4. Run in dev mode
 ```sh
 npm run dev
 ```
+5. Your app will run in http://localhost:5173, since it is built with Vite
 
 ### Using Docker
 1. Clone this project
 ```sh
-git clone https://github.com/yasirmaxstyle/fgo24-react-form
+git clone https://github.com/yasirmaxstyle/fgo24-react-redux
 ```
 2. Get into the path
 ```sh
-cd fgo24-react-form
+cd fgo24-react-redux
 ```
 3. Build image
 ```bash
@@ -47,6 +52,7 @@ docker run -p 8080:80 -d form:latest
 - [React-Hook-Form](https://www.npmjs.com/package/react-hook-form)
 - [Yup](https://www.npmjs.com/package/yup)
 - [React-Toastify](https://www.npmjs.com/package/react-toastify)
+- [ReduxToolkit](https://redux-toolkit.js.org/usage/usage-guide#working-with-non-serializable-data)
 
 ## How to take part in this project
 You are free to fork this project, make improvement and submit a pull request to improve this project. If you find this useful or if you have suggestion, you can start discussing through my social media below.

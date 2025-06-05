@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router'
 import { Provider } from 'react-redux'
 import App from './App'
 import Result from './pages/Result'
+// 
 
 import { store } from './redux/store'
 

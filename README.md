@@ -16,6 +16,26 @@ npm install
 ```sh
 npm run dev
 ```
+
+### Using Docker
+1. Clone this project
+```sh
+git clone https://github.com/yasirmaxstyle/fgo24-react-form
+```
+2. Get into the path
+```sh
+cd fgo24-react-form
+```
+3. Build image
+```bash
+docker build . -t form:latest
+```
+4. Run image with docker
+```bash
+docker run -p 8080:80 -d form:latest
+```
+5. Visit your app in http://localhost:8080
+
 ## TECHNOLOGIES
 - [React JS](https://react.dev/)
 - [Vite](https://vite.dev/)

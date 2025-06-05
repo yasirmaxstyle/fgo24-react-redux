@@ -1,10 +1,14 @@
 import { useCallback, useState } from "react"
 import { useForm } from "react-hook-form"
-import { Link } from "react-router"
 import * as yup from "yup"
+import { Link } from "react-router"
+import { toast, ToastContainer } from "react-toastify"
+
+import { useDispatch, useSelector } from "react-redux"
+import { addData } from "../redux/reducers/survey"
+
 import Input from "../components/Input"
 import InputOptions from "../components/InputOptions"
-import { toast, ToastContainer } from "react-toastify"
 
 const useYupValidationResolver = (validationSchema) =>
   useCallback(
@@ -44,6 +48,17 @@ function FormSurvey() {
   const { register, handleSubmit, formState: { errors }, reset } = useForm({ resolver })
   const [isSmoker, setIsSmoker] = useState(true)
 
+  const dispatch = useDispatch()
+
+  // const dataSmokers = JSON.parse(window.localStorage.getItem("smokers")) || []
+  const onSubmit = (data) => {
+    // dataSmokers.push(data)
+    // window.localStorage.setItem("smokers", JSON.stringify(dataSmokers))
+    dispatch(addData(data))
+    notify()
+    reset()
+  }
+
   const handleIsSmoker = (data) => {
     setIsSmoker(data) // handle state isSmoker to disable next input
   }
@@ -58,14 +73,6 @@ function FormSurvey() {
       autoClose: 2000,
       theme: "light",
     });
-  }
-
-  const dataSmokers = JSON.parse(window.localStorage.getItem("smokers")) || []
-  const onSubmit = (data) => {
-    dataSmokers.push(data)
-    window.localStorage.setItem("smokers", JSON.stringify(dataSmokers))
-    notify()
-    reset()
   }
 
   return (
